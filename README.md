@@ -1,3 +1,3 @@
-# [Personal Portfolio Web]
+# Personal Portfolio Web
 
 Tugas pertama mata kuliah Sistem Multimedia
