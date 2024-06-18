@@ -1,0 +1,23 @@
+.contact {
+                max-width: 600px;
+                margin: 0 auto;
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+            }
+            .contact--lockup {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+            .contact input {
+                width: 100%;
+                padding: 10px;
+                margin-top: 5px;
+                margin-bottom: 15px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+            .contact .message-box {
+                height: 100px;
+            }
