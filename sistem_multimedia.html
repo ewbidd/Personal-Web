@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,97 +12,159 @@
             color: white;
             text-decoration: none;
         }
+
         a:visited {
             color: white;
         }
     </style>
 </head>
+
 <body>
-  <style>
-    ul {
-    list-style-type: none; /* Menghapus gaya default seperti titik */
-    padding: 0;
-    margin: 0;
-}
-
-li {
-    display: inline-block; /* Menjadikan li menjadi inline-block agar elemen berjejer horizontal */
-    vertical-align: middle; /* Menyelaraskan secara vertikal */
-}
-
-li a {
-    text-decoration: none; /* Menghapus garis bawah default pada link */
-    color: black; /* Ubah warna teks link jika diperlukan */
-}
-header {
-            color: white; /* Warna teks di header */
-            padding: 10px 0; /* Padding atas dan bawah */
-            text-align: center; /* Tengahkan teks dan konten */
-}
-.logo {
-            float: left; /* Mengapit elemen ke kiri */
+    <style>
+        ul {
+            list-style-type: none;
+            /* Menghapus gaya default seperti titik */
+            padding: 0;
+            margin: 0;
         }
-.tugas {
-  margin-left: 20px ;
-  margin-bottom: 60px;
-  position: relative; /* Memastikan posisi relatif */
-}
-.separator {
-            margin: 0 5px; /* Jarak antara tautan dan pemisah */
+
+        li {
+            display: inline-block;
+            /* Menjadikan li menjadi inline-block agar elemen berjejer horizontal */
+            vertical-align: middle;
+            /* Menyelaraskan secara vertikal */
         }
+
+        li a {
+            text-decoration: none;
+            /* Menghapus garis bawah default pada link */
+            color: black;
+            /* Ubah warna teks link jika diperlukan */
+        }
+
+        header {
+            color: white;
+            /* Warna teks di header */
+            padding: 10px 0;
+            /* Padding atas dan bawah */
+            text-align: center;
+            /* Tengahkan teks dan konten */
+        }
+
+        .logo {
+            float: left;
+            /* Mengapit elemen ke kiri */
+        }
+
+        .tugas {
+            margin-left: 20px;
+            margin-bottom: 60px;
+            position: relative;
+            /* Memastikan posisi relatif */
+        }
+
+        .link a {
+            color: #fff;
+            /* Warna default link */
+            text-decoration: none;
+            /* Menghapus underline pada link */
+            transition: color 0.5s ease;
+            /* Menambahkan transisi halus selama 0.3 detik */
+        }
+
+        .link a:hover {
+            color: aqua;
+            /* Warna link saat dihover */
+        }
+
+        .separator {
+            margin: 0 5px;
+            /* Jarak antara tautan dan pemisah */
+        }
+
         .gambar-tugas {
-          position: absolute; /* Mengatur posisi absolut */
-            top: 0;
-            right: 1000px; /* Mengatur jarak dari teks */
-            width: 10px; /* Lebar gambar */
-            height: auto; /* Tinggi gambar otomatis menyesuaikan proporsi */
             text-align: center;
             margin-top: 10px;
         }
-</style>
+
+        .gambar-tugas img {
+            max-width: 30%;
+            align-items: end;
+            height: auto;
+        }
+
+        .gambar-tugas p {
+            text-align: center;
+            font-style: italic;
+        }
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
     <header>
         <nav>
-          <div class="logo">
-            <a href="/"><img src="assets/img/logo.png" width="40" height="40" style="margin-left: 77px; margin-top: -14px;"  alt="Home"></a>
-        </div>       
+            <div class="logo">
+                <a href="/"><img src="assets/img/logo.png" width="40" height="40"
+                        style="margin-left: 77px; margin-top: -14px;" alt="Home"></a>
+            </div>
             <h1>Sistem Multimedia</h1>
-            
+
         </nav>
     </header>
 
     <main>
-      <section>
-          <div class="tugas">
-              <h1>1. Tugas Konversi Video</h1>
+        <section>
+            <div class="tugas">
+                <h1>1. Tugas Konversi Video</h1>
+                <div class="link">
+                    <a href="https://drive.google.com/file/d/141bV22MBTOR5MACYJDbketMOnd_9wKTG/view?usp=drive_link"
+                        target="_blank">3gp</a><span class="separator">|</span>
+                    <a href="https://drive.google.com/file/d/1hdgyI1SzEbd7nOsIxcp5FTm0uXcT3IUL/view?usp=drive_link"
+                        target="_blank">AVI</a><span class="separator">|</span>
+                    <a href="https://drive.google.com/file/d/1Uj-NE5aFTWVW7OEONPPycNKQTBMlKLjb/view?usp=drive_link"
+                        target="_blank">M4V</a><span class="separator">|</span>
+                    <a href="https://drive.google.com/file/d/1jSOH_u-4DF72Ork_8GUc3lpW83cAFWMM/view?usp=drive_link"
+                        target="_blank">MKV</a><span class="separator">|</span>
+                    <a href="https://drive.google.com/file/d/1uPGLlHO0X9s5ntX0W5RRtGgQDYQzWhlk/view?usp=drive_link"
+                        target="_blank">MOV</a><span class="separator">|</span>
+                    <a href="https://drive.google.com/file/d/1dxSDdkqKAfnw7fFZzOF1SuM3DnfYeKVh/view?usp=drive_link"
+                        target="_blank">OGG</a><span class="separator">|</span>
+                    <a href="https://drive.google.com/file/d/19gU4ueZfIurSh8Bq8LMDLDPrS6mOxTC3/view?usp=drive_link"
+                        target="_blank">ASF</a><span class="separator">|</span>
+                    <a href="https://drive.google.com/file/d/106f7V83sWUDuIHlvoMbnkBfucnHF7Pg9/view?usp=drive_link"
+                        target="_blank">FLV</a><span class="separator">|</span>
+                    <a href="https://drive.google.com/file/d/10cc5QUD5hLqkE4eboFvErLRKsSgI7BO9/view?usp=drive_link"
+                        target="_blank">WEBM</a><span class="separator">|</span>
+                    <a href="https://drive.google.com/file/d/1JkV_LagxaUCU4AHOs5fljP3OUceSZZHy/view?usp=drive_link"
+                        target="_blank">WMV</a>
+                </div>
 
-              <a href="https://drive.google.com/file/d/141bV22MBTOR5MACYJDbketMOnd_9wKTG/view?usp=drive_link" target="_blank">3gp</a><span class="separator">|</span>
-              <a href="https://drive.google.com/file/d/1hdgyI1SzEbd7nOsIxcp5FTm0uXcT3IUL/view?usp=drive_link" target="_blank">AVI</a><span class="separator">|</span>
-              <a href="https://drive.google.com/file/d/1Uj-NE5aFTWVW7OEONPPycNKQTBMlKLjb/view?usp=drive_link" target="_blank">M4V</a><span class="separator">|</span>
-              <a href="https://drive.google.com/file/d/1jSOH_u-4DF72Ork_8GUc3lpW83cAFWMM/view?usp=drive_link" target="_blank">MKV</a><span class="separator">|</span>
-              <a href="https://drive.google.com/file/d/1uPGLlHO0X9s5ntX0W5RRtGgQDYQzWhlk/view?usp=drive_link" target="_blank">MOV</a><span class="separator">|</span>
-              <a href="https://drive.google.com/file/d/1dxSDdkqKAfnw7fFZzOF1SuM3DnfYeKVh/view?usp=drive_link" target="_blank">OGG</a><span class="separator">|</span>
-              <a href="https://drive.google.com/file/d/19gU4ueZfIurSh8Bq8LMDLDPrS6mOxTC3/view?usp=drive_link" target="_blank">ASF</a><span class="separator">|</span>
-              <a href="https://drive.google.com/file/d/106f7V83sWUDuIHlvoMbnkBfucnHF7Pg9/view?usp=drive_link" target="_blank">FLV</a><span class="separator">|</span>
-              <a href="https://drive.google.com/file/d/10cc5QUD5hLqkE4eboFvErLRKsSgI7BO9/view?usp=drive_link" target="_blank">WEBM</a><span class="separator">|</span>
-              <a href="https://drive.google.com/file/d/1JkV_LagxaUCU4AHOs5fljP3OUceSZZHy/view?usp=drive_link" target="_blank">WMV</a>
-              <div class="gambar-tugas">
-                <img src="assets/img/size.png" width="700px" height="auto" alt="Gambar Perkenalan">
-                <p style="font-style: italic;">Perbandingan Size Tiap Format Video</p>
+                <div class="gambar-tugas">
+                    <img src="assets/img/size.png" alt="Gambar Perkenalan">
+                    <p>Perbandingan Size Tiap Format Video</p>
+                </div>
             </div>
-          </div>
-          
-          <div class="tugas">
-            <h1>2. Tugas UTS Video Perkenalan</h1>
-            
-            <p><a href="https://drive.google.com/file/d/1-4rlOsyJn40RC8DeoY3goPV6Z2mbEeX9/view?usp=drive_link" target="_blank">Video</a></p>
-        </div>
-          <div class="tugas">
-              <h1>3. Project Video UAS</h1>
-              <p><a href="https://drive.google.com/file/d/1x_AJo5eMr6m8VGthHxp2mePgT9OZkC_n/view?usp=drive_link" target="_blank">Video</a></p>
-              <p><a href="LaporanKegiatan.htm" target="_blank">Laporan Kegiatan</a></p>
-          </div>
-      </section>
-  </main>
+
+            <div class="tugas">
+                <h1>2. Tugas UTS Video Perkenalan</h1>
+                <div class="link">
+                    <p><a href="https://drive.google.com/file/d/1-4rlOsyJn40RC8DeoY3goPV6Z2mbEeX9/view?usp=drive_link"
+                            target="_blank">Video</a></p>
+                </div>
+            </div>
+            <div class="tugas">
+                <h1>3. Project Video UAS</h1>
+
+                <div class="link">
+                    <p><a href="https://drive.google.com/file/d/1x_AJo5eMr6m8VGthHxp2mePgT9OZkC_n/view?usp=drive_link"
+                            target="_blank">Video</a></p>
+                    <p><a href="LaporanKegiatan.htm" target="_blank">Laporan Kegiatan</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <style>
@@ -113,6 +176,7 @@ header {
                 color: white;
                 text-align: left;
             }
+
             .footer-right {
                 position: fixed;
                 left: 0;
@@ -144,4 +208,5 @@ header {
         </div>
     </footer>
 </body>
+
 </html>
