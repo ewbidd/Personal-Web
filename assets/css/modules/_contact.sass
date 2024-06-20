@@ -1,75 +1,117 @@
 // position fixed in order to escape the 1440px wrapper
-.contact
-  position: fixed
-  top: 0
-  left: 0
-  width: 100%
-  height: 100%
-  background:
-    image: url("../img/maps.png")
-    position: center
-    size: cover
-    repeat: no-repeat
+.contact {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/maps.png") center / cover no-repeat;
+  
+  &--lockup {
+    position: relative;
+    display: flex;
+    width: 900px;
+    max-width: 75%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 auto;
 
-  &--lockup
-    position: relative
-    display: flex
-    width: 900px
-    max-width: 75%
-    height: 100%
-    align-items: center
-    justify-content: flex-end
-    margin: 0 auto
+    @media (max-width: 1180px) {
+      max-width: 90%;
+    }
 
-    @media (max-width: 1180px)
-      max-width: 90%
+    @media (max-width: 767px) {
+      justify-content: center;
+    }
 
-    @media (max-width: 767px)
-      justify-content: center
+    .modal {
+      padding: 45px;
+      text-align: center;
+      background-color: #000; // Adjust this to the variable $black if defined
+      box-shadow: 0 0 30px 0 rgba(0,0,0,.75);
 
-    .modal
-      padding: 45px 45px
-      text-align: center
-      background-color: $black
-      box-shadow: 0 0 30px 0 rgba(0,0,0,.75)
+      form {
+        display: flex;
+        flex-direction: column;
 
-      &--information
+        div {
+          margin-bottom: 15px;
+        }
 
+        input,
+        textarea {
+          width: 100%;
+          padding: 10px;
+          margin-top: 5px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 16px;
+          color: #000; // Text color is black
+          background-color: #fff; // Background color is white
+        }
+
+        textarea {
+          height: 100px;
+          resize: vertical;
+        }
+
+        h4 {
+          color: red;
+          font-size: 14px;
+          height: 14px;
+          margin: 5px 0 0 0;
+        }
+      }
+
+      &--information {
         p,
-        a
-          display: block
-          margin: 14px 0
-          text-decoration: none
-          color: $white
-          font-weight: 700
+        a {
+          display: block;
+          margin: 14px 0;
+          text-decoration: none;
+          color: #fff; // Adjust this to the variable $white if defined
+          font-weight: 700;
 
-        p
-          margin-top: 0
+          p {
+            margin-top: 0;
+          }
+        }
+      }
 
-      &--options
-        margin: 0
-        padding: 0
-        list-style: none
+      &--options {
+        margin: 0;
+        padding: 0;
+        list-style: none;
 
-        & > li
-          width: 130px
-          margin: 0 auto 25px auto
+        & > li {
+          width: 130px;
+          margin: 0 auto 25px auto;
+        }
 
-        li:nth-child(1)
-          background-color: #1769ff
+        &:nth-child(1) {
+          background-color: #1769ff;
+        }
 
-        li:nth-child(2)
-          background-color: #ea4c89
+        &:nth-child(2) {
+          background-color: #ea4c89;
+        }
 
-        li:nth-child(3)
-          margin-bottom: 0
-          background-color: $highlight
-          text-transform: uppercase
+        &:nth-child(3) {
+          margin-bottom: 0;
+          background-color: #ff0; // Adjust this to the variable $highlight if defined
+          text-transform: uppercase;
+        }
 
-        a
-          display: block
-          width: 100%
-          padding: 8px 0
-          text-decoration: none
-          color: $white
-          font-weight: 700
+        a {
+          display: block;
+          width: 100%;
+          padding: 8px 0;
+          text-decoration: none;
+          color: #fff; // Adjust this to the variable $white if defined
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
