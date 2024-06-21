@@ -191,27 +191,47 @@
               </div>
             </div>
           </li>
-          
+
+<style>
+  .button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #218838;
+        }
+</style>
         <li class="l-section section">
           <div class="contact">
             <div class="contact--lockup">
                 <div class="modal">
                     <form action="">
                         <div>
-                            <input type="text" name="name" placeholder="Name">
+                            <input type="text" name="name" placeholder="Name" 
+                            style="background-color: black; border-color: rgba(0, 0, 0, 0);">
                             <h4></h4>
                         </div>
                         <div>
-                            <input type="email" name="email" placeholder="Email">
+                            <input type="email" name="email" placeholder="Email" 
+                            style="background-color: black; border-color: rgba(0, 0, 0, 0);">
                             <h4></h4>
                         </div>
                         <div>
-                            <input type="text" name="phone" placeholder="Phone">
+                            <input type="text" name="phone" placeholder="Phone"
+                            style="background-color: black; border-color: rgba(0, 0, 0, 0);">
                             <h4></h4>
                         </div>
                         <div>
-                            <textarea name="message" class="message-box" placeholder="Message"></textarea>
+                            <textarea name="message" class="message-box" placeholder="Message"
+                            style="background-color: black; border-color: rgba(0, 0, 0, 0);"></textarea></textarea>
                       </div>
+                      <button type="submit">Send Message</button>
                     </form>
                 </div>
             </div>
